@@ -60,27 +60,33 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
                             <li>
                                 <Link to="/helpdesk" onClick={() => setMenuOpen(false)}>HelpDesk</Link>
                             </li>
-                            {isLoggedIn ? (
-                                <>
+                          
                                     <li>
-                                        <Link to="/dashboard" onClick={() => setMenuOpen(false)}>
-                                            <FontAwesomeIcon icon={faAddressCard} /> Dashboard
+                                        <Link to="/student" onClick={() => setMenuOpen(false)}>
+                                            <FontAwesomeIcon icon={faAddressCard} /> Student
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/sag" onClick={() => setMenuOpen(false)}>
+                                            <FontAwesomeIcon icon={faAddressCard} /> SAG 
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/finance" onClick={() => setMenuOpen(false)}>
+                                            <FontAwesomeIcon icon={faAddressCard} /> Finance
                                         </Link>
                                     </li>
                                     <li>
                                         <Link onClick={handleLogout}>Logout</Link>
                                     </li>
-                                </>
-                            ) : (
-                                <>
+                        
                                     <li>
                                         <Link to="/login" onClick={() => setMenuOpen(false)}>Login</Link>
                                     </li>
                                     <li>
                                         <Link to="/signup" onClick={() => setMenuOpen(false)}>Signup</Link>
                                     </li>
-                                </>
-                            )}
+                            
                             <li>
                                 <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
                             </li>

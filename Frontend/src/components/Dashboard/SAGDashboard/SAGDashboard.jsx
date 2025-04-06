@@ -6,7 +6,8 @@ import './SAGDashboard.css';
 
 Chart.register(ArcElement, Tooltip, Legend);
 
-const SAGDashboard = ({ name }) => {
+const SAGDashboard = () => {
+
   const [pendingDocuments, setPendingDocuments] = useState([
     { _id: '1', studentName: 'Ram', submissionTime: '2024-09-26 10:30 AM' },
     { _id: '2', studentName: 'Shyam', submissionTime: '2024-09-26 11:00 AM' },
@@ -99,7 +100,7 @@ const SAGDashboard = ({ name }) => {
             <Doughnut data={chartData} height={300} width={300} />
           </div>
           <div className="sag-details">
-            <h2>{name}</h2>
+            <h2>{sagDetails.name}</h2>
             <p>ID: {sagDetails.id}</p>
           </div>
         </div>

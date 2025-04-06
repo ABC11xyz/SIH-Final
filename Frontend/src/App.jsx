@@ -16,6 +16,9 @@ import About from './pages/About/About.jsx';
 import FAQ from './pages/FAQ/FAQ.jsx';
 import HowToApply from './pages/HowToApply/HowToApply.jsx';
 import ContactUs from './pages/ContactUs/ContactUs.jsx';
+import FinanceDashboard from './components/Dashboard/FinanceDashboard/FinanceDashboard.jsx';
+import SAGDashboard from './components/Dashboard/SAGDashboard/SAGDashboard.jsx';
+import StudentDashboard from './components/Dashboard/StudentDashboard/StudentDashboard.jsx';
 
 const App = () => {
 
@@ -37,9 +40,6 @@ const App = () => {
                      isEmailVerified = {isEmailVerified} setIsEmailVerified = {setIsEmailVerified}
                      />} />
 
-                    <Route path="/verify-identity" element={<VerifyIdentity setIsLoggedIn = {setIsLoggedIn} role = {role} setRole = {setRole} />} />
-                    
-                    <Route path="/dashboard" element={<Dashboard role={role}  setRole = {setRole} />} />
                     <Route path="/helpdesk" element={<CommunityPage />} />
                     <Route path="/apply" element={<ApplicationForm />} />
                     <Route path="sag/verify/:documentId" element={<VerifyDocument />} />
@@ -48,6 +48,10 @@ const App = () => {
                     <Route path='/faq' element={<FAQ />} />
                     <Route path='/how-to-apply' element={<HowToApply />} />
                     <Route path='/contact-us' element={<ContactUs />} />
+                    <Route path='/verify' element={<VerifyIdentity />} />
+                    <Route path='/finance' element={<FinanceDashboard />} />
+                    <Route path='/sag' element={<SAGDashboard />} />
+                    <Route path='/student' element={<StudentDashboard />} />
                 </Routes>
             </main>
              <Footer />

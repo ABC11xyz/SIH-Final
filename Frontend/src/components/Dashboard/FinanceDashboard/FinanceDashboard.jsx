@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import axios from 'axios';
 import { Pie } from 'react-chartjs-2';
 import './FinanceDashboard.css';
 
-const FinanceDashboard = ({ name }) => {
+const FinanceDashboard = () => {
   const [activeSection, setActiveSection] = useState('home');
 
   const [pendingPayments, setPendingPayments] = useState([
@@ -51,7 +51,7 @@ const FinanceDashboard = ({ name }) => {
         {activeSection === 'home' && (
           <div className="home-section">
             <div className="finance-details">
-              <h3>{name}</h3>
+              <h3>{financeDetails.name}</h3>
               <p>ID: {financeDetails.id}</p>
             </div>
             <div className="chart-container">

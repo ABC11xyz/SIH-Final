@@ -3,9 +3,10 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import './StudentDashboard.css';
 
-const StudentDashboard = ({ name }) => {
+const StudentDashboard = () => {
   const [studentDetails, setStudentDetails] = useState({
-    email: "vishnu@example.com",
+    name : "Student"
+    email: "student@example.com",
     id: "STU12345",
     formsFilled: 3 // Sample data for forms filled
   });
@@ -61,7 +62,7 @@ const StudentDashboard = ({ name }) => {
       </div>
 
       <div className="main-content">
-        <h1>Welcome, {name}</h1>
+        <h1>Welcome, {studentDetails.name}</h1>
 
         <div className="status-section">
           {activeSection === 'profile' && (
