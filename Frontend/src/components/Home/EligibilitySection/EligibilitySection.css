@@ -1,0 +1,45 @@
+.eligibility-section {
+  background: linear-gradient(to right, #003366, #0066cc);
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.eligibility-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.eligibility-list li {
+  margin: 10px 0;
+  position: relative;
+  padding-left: 25px;
+}
+
+.eligibility-list li::before {
+  content: '✔'; /* Checkmark symbol */
+  position: absolute;
+  left: 0;
+  color: #00ffcc; /* Change checkmark color */
+  font-size: 1.5rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

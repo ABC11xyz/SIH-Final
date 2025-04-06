@@ -1,0 +1,150 @@
+label {
+  font-size: 1em; /* Set a reasonable font size */
+  font-weight: 600; /* Make the text a bit bolder */
+  color: #003366 !important; /* Ensure it's a visible color against the background */
+  margin-bottom: 5px; /* Add some space below the label */
+  display: block; 
+}
+
+
+.signup-page {
+  display: flex;
+
+}
+
+.page-container {
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.page-container:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.welcome-section {
+  flex: 1;
+  background: linear-gradient(-45deg, #0066cc, #003366);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.welcome-title {
+  font-size: 2.5em;
+  color: #fefefe;
+}
+
+.welcome-message {
+  font-size: 1.2em;
+  color: #bea4a4;
+  margin-top: 10px;
+}
+
+.signup-container {
+  background: url("ss2.jpg") center bottom ;
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.signup-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: border 0.3s;
+}
+
+.signup-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.signup-button:hover {
+  background-color: #0056b3;
+}
+
+.email-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.otp-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.otp-field {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.verify-btn {
+  background-color: #28a745;
+}
+
+.verify-btn:hover {
+  background-color: #218838;
+}
+
+.verification-success {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.signup-select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.signup-select:focus {
+  border-color: #007bff;
+}

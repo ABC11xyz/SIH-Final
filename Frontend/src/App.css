@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; 
+  color: #333;
+  line-height: 1.6;
+  width: 100%;
+}
+
+.auth-bg{
+  background: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* Banner Part */
+.banner-part {
+  position: relative;
+  background-color: #063456;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.banner-part img {
+  width: 90%; 
+  height: 100%; 
+}
+
+.page-title {
+  font-family: Paralucent-light;
+  position: absolute; 
+  color: #ffffff;
+  top: 8%; 
+  font-size: 40px;
+  font-weight: 300;
+  left: 8%; 
+  text-align: start;
+}
+
+.sub-title {
+  position: absolute;
+  font-size: 18px; 
+  color: #ffc700;
+  left: 8%;
+  bottom: 20%;
+  text-align: start;
+}

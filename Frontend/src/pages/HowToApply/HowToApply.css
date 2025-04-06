@@ -1,0 +1,191 @@
+/* Existing CSS */
+.how-to-apply-container {
+  width: 100%;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  box-sizing: border-box;
+}
+
+.how-to-apply-content {
+  margin-top: 20px;
+}
+
+.content-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.content-description {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.flowchart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.flow-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 30%;
+}
+
+.flow-right {
+  width: 70%;
+}
+
+.flow-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 1%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.flow-right img:hover {
+  box-shadow: 0 5px 15px rgba(0, 52, 150, 0.5);
+}
+
+
+.flowchart-step {
+  display: flex;
+  align-items: center;
+  animation: fadeIn 0.5s ease;
+}
+
+.circle {
+  background-color: #007bff;
+  border-radius: 50%;
+  padding: 10px;
+  color: white;
+  margin: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.step-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.step-card h4 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.step-card p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Hover effect for step-card */
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 51, 102, 0.5);
+}
+
+/* Hover effect for circle */
+.circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 51, 102, 0.5);
+}
+
+.detailed-steps {
+  margin-top: 40px;
+  padding: 15px;
+  background: linear-gradient(0deg, #0066cc, #003366);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+
+.detailed-title {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.detailed-description {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: wheat;
+}
+
+.detailed-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.detailed-list li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.detailed-list li span {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 5px 15px;
+  border-radius: 25px;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* YouTube Video and Required Documents Section */
+.additional-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.video-section,
+.documents-section {
+  flex: 1;
+  margin: 0 20px;
+  
+}
+
+.video-  {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.video-title,
+.documents-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.documents-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 1em;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

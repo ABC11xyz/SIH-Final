@@ -1,0 +1,81 @@
+.application-process {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.step {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  width: 200px;
+  height: 250px;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+  animation: slideIn 0.5s ease-in;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(145deg, #0066cc, #003366);
+  color: white;
+}
+
+.step:hover h3, .step:hover p  , .step:hover .icon {
+  color: white;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.step h3 {
+  color: #007bff;
+  margin-top: 10px;
+  transition: color 0.3s;
+}
+
+.step p {
+  color: #555;
+  transition: color 0.3s;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

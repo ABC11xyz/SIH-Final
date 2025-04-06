@@ -1,0 +1,89 @@
+.student-dashboard {
+  display: flex;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px; /* Width of the sidebar */
+  background-color: #333; /* Sidebar background color */
+  color: white; /* Text color in the sidebar */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.nav-btn {
+  width: 100%;
+  background-color: transparent; /* Transparent background */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  padding: 10px; /* Button padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-align: left; /* Align text to the left */
+}
+
+.nav-btn:hover {
+  background-color: #575757; /* Change background on hover */
+}
+
+.nav-btn.active {
+  background-color: #575757; /* Active button color */
+}
+
+.main-content {
+  flex-grow: 1; /* Allow this section to grow */
+  padding: 20px;
+}
+
+.status-section {
+  margin-top: 20px;
+}
+
+.application-table {
+  width: 100%;
+  border-collapse: collapse; /* Collapse borders */
+}
+
+.application-table th, .application-table td {
+  border: 1px solid #ddd; /* Border for table cells */
+  padding: 8px; /* Cell padding */
+  text-align: left; /* Align text to the left */
+}
+
+.track-btn {
+  background-color: #007bff; /* Track button color */
+  color: white; /* Track button text color */
+  border: none; /* No border */
+  padding: 5px 10px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.apply-btn {
+  background-color: #28a745; /* Apply button color */
+  color: white; /* Apply button text color */
+  padding: 10px 15px; /* Padding for button */
+  text-decoration: none; /* No underline */
+}
+
+.card {
+  background-color: white; /* Card background color */
+  padding: 20px; /* Card padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Card shadow */
+  margin-top: 20px; /* Margin for spacing */
+}
+
+
+.pmsss-info {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.active {
+  background-color: #007bff;
+  color: wheat;
+}
