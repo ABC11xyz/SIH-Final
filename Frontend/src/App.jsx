@@ -1,10 +1,9 @@
 import './App.css';
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home.jsx';
 import LoginPage from './pages/Login/Login.jsx';
 import SignupPage from './pages/Signup/Signup.jsx';
-import Dashboard from './pages/Dashboard/Dashboard.jsx';
 import NotFound from './pages/NotFound/NotFound.jsx';
 import CommunityPage from './pages/CommunityPage/CommunityPage.jsx';
 import ApplicationForm from './pages/ApplicationForm/ApplicationForm.jsx';

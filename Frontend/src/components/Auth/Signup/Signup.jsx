@@ -68,29 +68,7 @@ const Signup = ({isEmailVerified, setIsEmailVerified}) => {
       return;
     }
 
-    const otp = Math.floor(100000 + Math.random() * 900000).toString();
-    setGeneratedOtp(otp);
-
-    const templateParams = {
-      to_email: email,
-      verification_code: otp,
-    };
-
-    emailjs.send(
-      'service_ib70btk',
-      'template_z7nna77',
-      templateParams,
-      'VbozfHDqFraOiUNLP'
-    )
-      .then((response) => {
-        console.log('OTP sent successfully:', response);
-        setIsOtpSent(true);
-        toast.success('OTP sent successfully!');
-      })
-      .catch((error) => {
-        console.error('Error sending OTP:', error);
-        toast.error('Failed to send OTP. Please try again.');
-      });
+    console.log("Email send")
   };
 
   const verifyOtp = () => {
