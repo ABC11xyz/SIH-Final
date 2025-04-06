@@ -44,7 +44,6 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
                     </div>
                 </div>
 
-                {/* Navigation */}
                 <div className='navbar'>
                     <div className="nav-logo">
                         <img src="SW.png" alt="SW logo" />
@@ -61,31 +60,34 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
                                 <Link to="/helpdesk" onClick={() => setMenuOpen(false)}>HelpDesk</Link>
                             </li>
                           
-                                    <li>
-                                        <Link to="/student" onClick={() => setMenuOpen(false)}>
-                                            <FontAwesomeIcon icon={faAddressCard} /> Student
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/sag" onClick={() => setMenuOpen(false)}>
-                                            <FontAwesomeIcon icon={faAddressCard} /> SAG 
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/finance" onClick={() => setMenuOpen(false)}>
-                                            <FontAwesomeIcon icon={faAddressCard} /> Finance
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link onClick={handleLogout}>Logout</Link>
-                                    </li>
-                        
-                                    <li>
-                                        <Link to="/login" onClick={() => setMenuOpen(false)}>Login</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/signup" onClick={() => setMenuOpen(false)}>Signup</Link>
-                                    </li>
+                            <li>
+                                <Link to="/student" onClick={() => setMenuOpen(false)}>
+                                    <FontAwesomeIcon icon={faAddressCard} /> Student
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/sag" onClick={() => setMenuOpen(false)}>
+                                    <FontAwesomeIcon icon={faAddressCard} /> SAG 
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/finance" onClick={() => setMenuOpen(false)}>
+                                    <FontAwesomeIcon icon={faAddressCard} /> Finance
+                                </Link>
+                            </li>
+                            <li>
+                                <Link onClick={handleLogout}>Logout</Link>
+                            </li>
+                
+                            <li>
+                                <Link to="/login" onClick={() => setMenuOpen(false)}>Login</Link>
+                            </li>
+                            <li>
+                                <Link to="/signup" onClick={() => setMenuOpen(false)}>Signup</Link>
+                            </li>
+                            <li>
+                                <Link to="/verify" onClick={() => setMenuOpen(false)}>Verify</Link>
+                            </li>
                             
                             <li>
                                 <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
@@ -106,7 +108,6 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
                     </div>
                 </div>
 
-                {/* Contact Info, Admin Login, and Announcement */}
                 <div className="nav-lower">
                     <div className="con">
                         <p><FontAwesomeIcon icon={faPhone} /> +123-91234568</p>

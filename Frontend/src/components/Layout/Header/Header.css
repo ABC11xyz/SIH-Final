@@ -45,6 +45,7 @@ header {
 .nav-links {
     display: flex;
     list-style: none;
+    
 }
 
 .nav-links li {
@@ -100,7 +101,6 @@ header {
     background-color: #ffa500;
 }
 
-/* Announcement styling */
 .announcement {
     display: flex;
     align-items: center;
@@ -124,14 +124,13 @@ header {
     animation: scroll-text 20s linear infinite;
 }
 
-/* New label styling */
 .new-label {
-    background-color: red; /* Red background */
-    color: white; /* White text color */
-    padding: 3px 8px; /* Padding for the label */
-    border-radius: 3px; /* Rounded corners */
-    font-weight: bold; /* Bold text */
-    margin-right: 5px; /* Space between the label and text */
+    background-color: red; 
+    color: white; 
+    padding: 3px 8px; 
+    border-radius: 3px; 
+    font-weight: bold;
+    margin-right: 5px;
 }
 
 @keyframes scroll-text {
