@@ -5,7 +5,7 @@ import './StudentDashboard.css';
 
 const StudentDashboard = () => {
   const [studentDetails, setStudentDetails] = useState({
-    name : "Student"
+    name : "Student",
     email: "student@example.com",
     id: "STU12345",
     formsFilled: 3 // Sample data for forms filled
@@ -16,6 +16,8 @@ const StudentDashboard = () => {
     { id: 'APP001', status: 'Approved' },
     { id: 'APP002', status: 'Pending' },
     { id: 'APP003', status: 'Rejected' },
+    { id: 'APP026', status: 'Approved' },
+    { id: 'APP056', status: 'Pending' },
   ]);
 
   // Mock function to simulate fetching applications
