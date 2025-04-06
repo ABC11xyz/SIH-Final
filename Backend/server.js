@@ -13,7 +13,7 @@ app.use(express.json());
 
 
 app.use(cors({
-    origin: 'http://localhost:5173', 
+    origin: 'https://sih-final-rho.vercel.app/', 
     credentials: true
 }));
 
