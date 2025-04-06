@@ -59,6 +59,7 @@ const VerifyIdentity = ({setIsLoggedIn , role , setRole}) => {
     <div className="container">
       <div className="verify-identity-container">
         <h2 className="verify-identity-title">Verify Your Identity</h2>
+        <p>Note : This is Dummy ...</p>
         <form className="verify-identity-form" onSubmit={handleSubmit}>
           <label htmlFor="aadhaar">Upload Aadhaar Card</label>
           <input

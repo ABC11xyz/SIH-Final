@@ -26,7 +26,6 @@ export const handleLogin = async (req, res) => {
 
     res.cookie("jwtToken", token, {
       httpOnly: true,
-      sameSite: "strict",
       secure: process.env.NODE_ENV === "production",
       maxAge: 7 * 24 * 60 * 60 * 1000
     });
@@ -75,7 +74,6 @@ export const handleSignup = async (req, res) => {
   
     res.cookie("jwtToken", token, {
       httpOnly: true,
-      sameSite: "strict",
       secure: process.env.NODE_ENV === "production",
       maxAge: 7 * 24 * 60 * 60 * 1000
     });
@@ -102,9 +100,9 @@ export const handleDashboard = async (req, res) => {
       return res.status(404).json({ success: false, message: "User not found" });
     }
 
-    if(!user.identityVerified){
-      return res.status(404).json({ success: false, message: "User is Not Verified" });
-    }
+    // if(!user.identityVerified){
+    //   return res.status(404).json({ success: false, message: "User is Not Verified" });
+    // }
 
     console.log(user.role);
     
