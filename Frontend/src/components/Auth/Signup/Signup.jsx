@@ -44,7 +44,7 @@ const Signup = ({isEmailVerified, setIsEmailVerified}) => {
     }
 
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/user/signup', values, {
+      const res = await axios.post('https://sih-final-6lf7.onrender.com/api/auth/user/signup', values, {
         withCredentials: true,
       });
 

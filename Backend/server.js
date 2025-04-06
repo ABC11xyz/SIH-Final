@@ -11,11 +11,13 @@ const app = express();
 app.use(cookieParser());
 app.use(express.json()); 
 
+const cors = require('cors');
 
 app.use(cors({
-    origin: 'http://localhost:5173', 
-    credentials: true
+  origin: 'https://sih-final-rho.vercel.app', 
+  credentials: true,
 }));
+
 
 app.use("/api/auth/user", userRoutes);
 

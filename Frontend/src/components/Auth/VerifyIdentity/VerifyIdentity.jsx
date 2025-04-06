@@ -12,7 +12,7 @@ const VerifyIdentity = ({setIsLoggedIn , role , setRole}) => {
   useEffect(() => {
     const fetchRole = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/auth/user/verify', {
+        const res = await axios.get('https://sih-final-6lf7.onrender.com/api/auth/user/verify', {
           withCredentials: true,
         });
         

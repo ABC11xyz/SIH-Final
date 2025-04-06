@@ -77,7 +77,7 @@ const CommunityPage = () => {
         const newMessage = { sender: 'user', text: userMessage };
         setChatMessages(prevMessages => [...prevMessages, newMessage]);
 
-        axios.post('http://localhost:5000/api/auth/user/chat', { message: userMessage })
+        axios.post('https://sih-final-6lf7.onrender.com/api/auth/user/chat', { message: userMessage })
             .then(response => {
                 const botMessage = response.data.reply;
                 setChatMessages(prevMessages => [...prevMessages, newMessage, { sender: 'bot', text: botMessage }]);
